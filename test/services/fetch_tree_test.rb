@@ -12,4 +12,10 @@ class FetchTreeTest < ActiveSupport::TestCase
       assert_raises(FetchTree::ApiError) { FetchTree.call("input") }
     end
   end
+
+  test "returns nil if a tree doesn't exist" do
+    VCR.use_cassette("nonexisting") do
+      assert_nil FetchTree.call("nonexisting")
+    end
+  end
 end
