@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "name": "Urban Extent",
+    "sub_themes": [
+      {
+        "categories": [
+          {
+            "id": 1,
+            "indicators": [
+              {
+                "id": 299,
+                "name": "Total"
+              }
+            ],
+            "name": "Area",
+            "unit": "(sq. km.)"
+          }
+        ],
+        "id": 1,
+        "name": "Administrative"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Demographics",
+    "sub_themes": [
+      {
+        "categories": [
+          {
+            "id": 10,
+            "indicators": [
+              {
+                "id": 308,
+                "name": "Total"
+              }
+            ],
+            "name": "Crude birth rate",
+            "unit": "(live births per 1000 people)"
+          }
+        ],
+        "id": 4,
+        "name": "Births and Deaths"
+      }
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "name": "Urban Extent",
+    "sub_themes": [
+      {
+        "categories": [
+          {
+            "id": 7,
+            "indicators": [
+              {
+                "id": 305,
+                "name": "Total"
+              }
+            ],
+            "name": "Area",
+            "unit": "(sq. km.)"
+          },
+          {
+            "id": 9,
+            "indicators": [
+              {
+                "id": 307,
+                "name": "Total"
+              }
+            ],
+            "name": "Population density",
+            "unit": "(people per sq. km.)"
+          }
+        ],
+        "id": 3,
+        "name": "Lit at night"
+      }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Urban Extent",
+    "sub_themes": [
+      {
+        "categories": [
+          {
+            "id": 1,
+            "indicators": [
+              {
+                "id": 299,
+                "name": "Total"
+              }
+            ],
+            "name": "Area",
+            "unit": "(sq. km.)"
+          }
+        ],
+        "id": 1,
+        "name": "Administrative"
+      },
+      {
+        "categories": [
+          {
+            "id": 4,
+            "indicators": [
+              {
+                "id": 302,
+                "name": "Total"
+              }
+            ],
+            "name": "Area",
+            "unit": "(sq. km.)"
+          }
+        ],
+        "id": 2,
+        "name": "Built up"
+      }
+    ]
+  }
+]
