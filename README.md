@@ -1,6 +1,6 @@
 # Prunr
 
-## Notes
+Notes:
 
 - only 200 and 5xx server responses are supported at the moment, any
   other response will result in 404 Not Found
