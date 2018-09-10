@@ -6,7 +6,7 @@ class FilterThemesByIndicatorIds
   end
 
   def call(themes, indicator_ids = [])
-    themes.dup.keep_if do |theme|
+    deep_dup(themes).keep_if do |theme|
       theme["sub_themes"].keep_if do |sub_theme|
         sub_theme["categories"].keep_if do |category|
           category["indicators"].keep_if do |indicator|
@@ -15,5 +15,14 @@ class FilterThemesByIndicatorIds
         end.present?
       end.present?
     end
+  end
+
+  private
+
+  # a simple workaround to avoid modifying the original object - may
+  # be removed for optimization but the service needs to be advertised
+  # as "destructive"
+  def deep_dup(object)
+    JSON.parse(JSON.dump(object))
   end
 end
