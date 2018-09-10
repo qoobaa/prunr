@@ -1,24 +1,12 @@
-# README
+# Prunr
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Notes
 
-Things you may want to cover:
+- only 200 and 5xx server responses are supported at the moment, any
+  other response will result in 404 Not Found
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- since I've decided to use a destructive `keep_if` array's method, a
+  deep cloning the object is necessary to avoid side effects - maybe
+  it's not the most elegant solution and certainly not the most memory
+  efficient, but it does the job and the implementation is pretty
+  straightforward
