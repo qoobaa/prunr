@@ -21,7 +21,7 @@ class FilterThemesByIndicatorIds
 
   # a simple workaround to avoid modifying the original object - may
   # be removed for optimization but the service needs to be advertised
-  # as "destructive"
+  # as a service with side effects
   def deep_dup(object)
     JSON.parse(JSON.dump(object))
   end
