@@ -1,10 +1,4 @@
-class FilterThemesByIndicatorIds
-  include Singleton
-
-  class << self
-    delegate :call, to: :instance
-  end
-
+class FilterThemesByIndicatorIds < ApplicationService
   def call(themes, indicator_ids = [])
     deep_dup(themes).keep_if do |theme|
       theme["sub_themes"].keep_if do |sub_theme|

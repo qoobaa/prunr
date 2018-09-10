@@ -1,14 +1,8 @@
-class FetchTree
-  include Singleton
-
+class FetchTree < ApplicationService
   API_URI = "https://kf6xwyykee.execute-api.us-east-1.amazonaws.com/production/tree/%{name}"
   MAX_RETRIES = 5
 
   ApiError = Class.new(StandardError)
-
-  class << self
-    delegate :call, to: :instance
-  end
 
   def call(name)
     retries_count ||= MAX_RETRIES
